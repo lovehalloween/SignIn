@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCBDE8"
+    tools:context=".RegisterPage">
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/SignIn"
+        android:textAlignment="center"
+        android:textColor="#3C240D"
+        android:textColorHint="#3C240D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Fullname"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:hint="@string/fullname"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:textColor="#3C240D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signin" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="@string/uname_hint"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:textColor="#3C240D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Fullname" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="268dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="#3C240D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="@string/pass_hint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/retypePass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Email" />
+
+    <EditText
+        android:id="@+id/retypePass"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginBottom="122dp"
+        android:ems="10"
+        android:hint="@string/retype_pass"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/orSignin2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="124dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#735AA3"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/signup_btn"
+        android:textAlignment="center"
+        android:textColorHint="#FAFAFA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/orSignin2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/orSignin2"
+        android:layout_width="110dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="27dp"
+        android:hint="@string/or_signin"
+        android:textAlignment="center"
+        android:textColor="#3C240D"
+        android:textColorHint="#3C240D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fb2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="246dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/orSignin2"
+        app:srcCompat="@drawable/icons8_facebook" />
+
+    <ImageView
+        android:id="@+id/ig2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/orSignin2"
+        app:layout_constraintTop_toBottomOf="@+id/orSignin2"
+        app:srcCompat="@drawable/icons8_instagram" />
+
+    <ImageView
+        android:id="@+id/ex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toEndOf="@+id/orSignin2"
+        app:layout_constraintTop_toBottomOf="@+id/orSignin2"
+        app:srcCompat="@drawable/icons8_twitter" />
+</androidx.constraintlayout.widget.ConstraintLayout>
