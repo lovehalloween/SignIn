@@ -8,10 +8,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/register"
+        android:id="@+id/gotoRegister"
         android:layout_width="178dp"
         android:layout_height="22dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
         android:hint="@string/go_register"
         android:textAlignment="center"
@@ -19,6 +19,7 @@
         android:textColorHint="#3C240D"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fb" />
 
@@ -108,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
         android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintBottom_toTopOf="@+id/gotoRegister"
         app:layout_constraintStart_toEndOf="@+id/orSignin"
         app:srcCompat="@drawable/icons8_twitter" />
 

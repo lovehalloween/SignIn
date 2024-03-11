@@ -4,9 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
-
-import com.example.c207_muldong.R.id;
 
 public class RegisterPage extends AppCompatActivity {
 
@@ -15,12 +14,12 @@ public class RegisterPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_page);
 
-        TextView start = findViewById(R.id.register);
+        TextView gotoSignin = findViewById(R.id.gotoSignin);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        gotoSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, RegisterPage.class);
+                Intent intent = new Intent(RegisterPage.this, MainActivity.class);
                 startActivity(intent);
             }
         });

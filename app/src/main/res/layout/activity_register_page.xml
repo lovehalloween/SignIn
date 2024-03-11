@@ -8,12 +8,28 @@
     tools:context=".RegisterPage">
 
     <TextView
+        android:id="@+id/gotoSignin"
+        android:layout_width="178dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/go_login"
+        android:textAlignment="center"
+        android:textColor="#3C240D"
+        android:textColorHint="#3C240D"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ex2" />
+
+    <TextView
         android:id="@+id/signin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="95dp"
         android:fontFamily="sans-serif-medium"
-        android:hint="@string/SignIn"
+        android:hint="@string/SignUp"
         android:textAlignment="center"
         android:textColor="#3C240D"
         android:textColorHint="#3C240D"
@@ -93,7 +109,7 @@
         android:ems="10"
         android:hint="@string/retype_pass"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/orSignin2"
+        app:layout_constraintBottom_toTopOf="@+id/orSignUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Username" />
@@ -102,6 +118,7 @@
         android:id="@+id/signupbtn"
         android:layout_width="124dp"
         android:layout_height="59dp"
+        android:layout_marginTop="38dp"
         android:layout_marginBottom="47dp"
         android:backgroundTint="#735AA3"
         android:fontFamily="sans-serif-medium"
@@ -109,22 +126,23 @@
         android:textAlignment="center"
         android:textColorHint="#FAFAFA"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/orSignin2"
+        app:layout_constraintBottom_toBottomOf="@+id/orSignUp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retypePass" />
 
     <TextView
-        android:id="@+id/orSignin2"
+        android:id="@+id/orSignUp"
         android:layout_width="110dp"
         android:layout_height="22dp"
         android:layout_marginBottom="27dp"
-        android:hint="@string/or_signin"
+        android:hint="@string/or_signup"
         android:textAlignment="center"
         android:textColor="#3C240D"
         android:textColorHint="#3C240D"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/fb2"
+        app:layout_constraintBottom_toTopOf="@+id/ex2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -132,10 +150,10 @@
         android:id="@+id/fb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
         android:layout_marginEnd="19dp"
-        android:layout_marginBottom="246dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/orSignin2"
+        app:layout_constraintEnd_toStartOf="@+id/orSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/orSignUp"
         app:srcCompat="@drawable/icons8_facebook" />
 
     <ImageView
@@ -144,8 +162,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/orSignin2"
-        app:layout_constraintTop_toBottomOf="@+id/orSignin2"
+        app:layout_constraintEnd_toEndOf="@+id/orSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/orSignUp"
         app:srcCompat="@drawable/icons8_instagram" />
 
     <ImageView
@@ -153,8 +171,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="27dp"
-        app:layout_constraintStart_toEndOf="@+id/orSignin2"
-        app:layout_constraintTop_toBottomOf="@+id/orSignin2"
+        android:layout_marginBottom="246dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orSignUp"
         app:srcCompat="@drawable/icons8_twitter" />
 </androidx.constraintlayout.widget.ConstraintLayout>
